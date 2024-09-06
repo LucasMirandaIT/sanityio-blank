@@ -4,9 +4,8 @@ import { documentInternationalization } from '@sanity/document-internationalizat
 import { i18n } from '../../i18n.config';
 import { schemaTypes } from '@/sanity/schemas';
 
-// your credentials
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
-const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '';
+const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 
 export default defineConfig({
   basePath: '/admin',
